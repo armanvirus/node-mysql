@@ -1,7 +1,6 @@
 {
   "name": "node-mysql",
   "version": "1.0.0",
-  "type": "module",
   "description": "a project that shows how to use node/express together with mysql",
   "main": "index.js",
   "scripts": {
