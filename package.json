@@ -1,0 +1,35 @@
+{
+  "name": "node-mysql",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "a project that shows how to use node/express together with mysql",
+  "main": "index.js",
+  "scripts": {
+    "test": "run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/armanvirus/node-mysql.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mysql",
+    "beginner-guide",
+    "demo"
+  ],
+  "author": "arman grema",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/armanvirus/node-mysql/issues"
+  },
+  "homepage": "https://github.com/armanvirus/node-mysql#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mysql2": "^3.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
+}
