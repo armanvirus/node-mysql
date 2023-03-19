@@ -1,7 +1,8 @@
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3300;
-const pool =  require("./Queries/connectPool");
+const pool =  require("./Queries/connectPool")();
+const allUsers = require("./Queries/getAllUsers")
 
 
 app.get('/', (req,res)=>{
@@ -10,9 +11,9 @@ app.get('/', (req,res)=>{
 
 // getting all users
 app.get("/users", async(req,res)=>{
-    const con = await pool()
-    console.log(con)
-    res.send("users successfully retrieved")
+    const users = await allUsers(pool)
+    console.log(users)
+    res.send(users)
 })
 
 
